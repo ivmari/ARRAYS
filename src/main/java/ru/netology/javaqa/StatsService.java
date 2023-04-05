@@ -1,6 +1,6 @@
 package ru.netology.javaqa;
 
-public class StringService {
+public class StatsService {
     public int salesAmount(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; ++i)
