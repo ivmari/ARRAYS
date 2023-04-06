@@ -1,4 +1,4 @@
-package ru.netology.javaqa;
+package ru.netology.stats;
 
 public class StatsService {
     public int salesAmount(int[] array) {
@@ -11,7 +11,7 @@ public class StatsService {
     }
 
     public double averageMonthlySales(int[] array) {
-        int sum = salesAmount(array);
+        double sum = salesAmount(array);
         double average = 0;
         average = sum / array.length;
         return average;
@@ -19,7 +19,7 @@ public class StatsService {
 
     }
 
-    public int maxSalesNnumberMonth(int[] array) {
+    public int maxSalesNumberMonth(int[] array) {
         int maxMonth = 0;
 
         for (int i = 0; i < array.length; i++) {
@@ -31,7 +31,7 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public int minSalesNnumberMonth(int[] array) {
+    public int minSalesNumberMonth(int[] array) {
         int minMonth = 0;
 
         for (int i = 0; i < array.length; i++) {

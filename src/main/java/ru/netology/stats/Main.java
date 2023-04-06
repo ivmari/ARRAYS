@@ -1,15 +1,15 @@
-package ru.netology.javaqa;
+package ru.netology.stats;
 
 public class Main {
     public static void main(String[] args) {
         int[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int sum = 0;
         double average = 0;
-        StringService service = new StringService();
+        StatsService service = new StatsService();
         sum = service.salesAmount(array);
         average = service.averageMonthlySales(array);
-        int maxMonth = service.maxSalesNnumberMonth(array);
-        int minMonth = service.minSalesNnumberMonth(array);
+        int maxMonth = service.maxSalesNumberMonth(array);
+        int minMonth = service.minSalesNumberMonth(array);
         int minSales = service.numberMonthsSalesBelowAverage(array);
         int maxSales = service.numberMonthsSalesUnderAverage(array);
         System.out.println(sum);
