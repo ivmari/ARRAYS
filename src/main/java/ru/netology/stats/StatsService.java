@@ -3,11 +3,11 @@ package ru.netology.stats;
 public class StatsService {
     public int salesAmount(int[] array) {
         int sum = 0;
-        for (int i = 0; i < array.length; ++i)
+        for (int i = 0; i < array.length; ++i) {
             sum += array[i];
-        {
-            return sum;
         }
+
+        return sum;
     }
 
     public double averageMonthlySales(int[] array) {
@@ -15,8 +15,6 @@ public class StatsService {
         double average = 0;
         average = sum / array.length;
         return average;
-
-
     }
 
     public int maxSalesNumberMonth(int[] array) {
@@ -46,16 +44,22 @@ public class StatsService {
     public int numberMonthsSalesBelowAverage(int[] array) {
         double sum = averageMonthlySales(array);
         int minSales = 0;
-        for (int i = 0; i < array.length; i++)
-            if (array[i] < sum) minSales++;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < sum) {
+                minSales++;
+            }
+        }
         return minSales;
     }
 
     public int numberMonthsSalesUnderAverage(int[] array) {
         double sum = averageMonthlySales(array);
         int maxSales = 0;
-        for (int i = 0; i < array.length; i++)
-            if (array[i] > sum) maxSales++;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > sum) {
+                maxSales++;
+            }
+        }
         return maxSales;
     }
 }
